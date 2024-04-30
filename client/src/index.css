@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --primary: #011728;
+}
+
+* {
+  color: #4d4d4d;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #f4f4f4;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+input:is(:active, :focus, :focus-visible, :focus-within),
+select:is(:active, :focus, :focus-visible, :focus-within) {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
